@@ -1,0 +1,12 @@
+change_server if server is down that communicates with rtwos then select diffrent site
+manual_update i may remove this feature if someone else doent editit since i havent found a way to auto update in tkinter then use manual ubdate to update data
+type is to detect what weather system it is eather if it is a fog rain hail 
+hologram is basicly a weather radar 
+heavy is a histogram window
+temp tells you the temprature in your local area or city or any where aroung the world
+wx radar is a weather radar that uses online audio
+time tells you your clock
+setting can customized your envirement 
+the fist canvas on the left is a temp gragh 
+the middle canvas is for satellite 
+the right canvas if for weather alerts and current satellite feed
