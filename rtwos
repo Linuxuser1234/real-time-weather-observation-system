@@ -1,0 +1,131 @@
+from tkinter import *
+import tkinter.messagebox
+
+ws = Tk()
+ws.title('real time weather observation system V0.1a_build_1')
+ws.geometry('500x400')
+ws.config(bg='grey')
+
+canvas = Canvas(
+    ws,
+    height=300,
+    width=400,
+    bg="#fff",
+    )
+
+canvas.pack()
+
+btn1 = Button(
+    ws,
+    text='type',
+    font="Times 12",
+    bg='#00FF00',
+    command=lambda:canvas.delete("type")
+    )
+ 
+btn1.pack(side=LEFT, fill=X, expand=True)
+
+btn2 = Button(
+    ws,
+    text='hologram',
+    font="Times 12",
+    bg="#FF69B4",
+    command=lambda:canvas.delete("hologram")
+    )
+ 
+btn2.pack(side=LEFT, fill=X, expand=True)
+def heavy():
+    tkinter.messagebox.showinfo('heavy' , 'heavy demo')
+btn3 = Button(
+    ws,
+    text='heavy',
+    font="Times 12",
+    bg="#6F2DA8",
+    command=heavy
+)
+def Temp():
+    tkinter.messagebox.showinfo('TEMP','Temp demo')
+
+btn4 = Button(
+    ws,
+    text='temp',
+    font="times 12",
+    bg="#8b0000",
+    command= Temp
+)
+def wx_radio():
+  canvas = Canvas(
+      ws,
+      height=300,
+      width=400,
+      bg = "#fff",
+  )
+  
+btn5 = Button(
+    ws,
+    text='wx radio',
+    font="times 12",
+    bg="#FF8C00",
+    command=wx_radio
+)
+btn6 = Button(
+   ws,
+   text='SETTINGS',
+   width = 40,
+   font="times 12",
+   bg="#FFFF00",
+   command = lambda:canvas.delete("SETTINGS")
+)
+btn7 = Button(
+    ws,
+    text='TIME',
+    width = 40,
+    font="times 12",
+    bg="#0000FF",
+    command=lambda:canvas.delete("TIME")
+)
+btn8 = Button(
+    ws,
+    text='MANUAL_UPDATE',
+    font="Times 12",
+    bg="#FF0000",
+ command=lambda:canvas.delete("MANUAL_UPDATE")
+    )
+btn9 = Button(
+    ws,
+    text='CHANGE_SERVER',
+    font="Times 12",
+    bg="#00FF00",
+    command=lambda:canvas.delete("CHANGE_SERVER")
+    )
+    
+canvas = Canvas(
+    ws,
+    height=300,
+    width=400,
+    bg="#fff",
+)  
+canvas = Canvas(
+    ws,
+    height=300,
+    width=400,
+    bg="#fff",
+)
+
+
+canvas.place(x = 1000, y = 60)
+btn9.place(x =600, y= 310)
+btn8.place(x  =800, y = 310)
+btn7.place(x =10, y = 590 )
+btn6.place(x =400, y = 590)
+btn5.pack(side=RIGHT, fill=X, expand=True)
+btn4.pack(side=RIGHT, fill=X, expand=True)
+btn3.pack(side=LEFT, fill=X, expand=True)
+canvas = Canvas(
+    ws,
+    height='400',
+    width='400',
+)
+canvas.place(x = 0, y = 0)
+
+ws.mainloop()    
